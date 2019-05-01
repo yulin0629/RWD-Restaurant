@@ -1,0 +1,326 @@
+a {
+  text-decoration: none;
+}
+
+.fab.fa-instagram {
+  color: transparent;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.margin-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.margin-left-auto {
+  margin-left: auto;
+}
+
+.flex1 {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+
+.flex0 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+.flex01 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto
+}
+
+.flex10 {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto
+}
+
+.flex {
+  display: -webkit-box!important;
+  display: -webkit-flex!important;
+  display: -ms-flexbox!important;
+  display: flex!important;
+}
+
+.flexColumn {
+  display: -webkit-box!important;
+  display: -webkit-flex!important;
+  display: -ms-flexbox!important;
+  display: flex!important;
+  -webkit-box-orient: vertical!important;
+  -webkit-box-direction: normal!important;
+  -webkit-flex-direction: column!important;
+  -ms-flex-direction: column!important;
+  flex-direction: column!important;
+}
+
+.flexCenter {
+  display: -webkit-box!important;
+  display: -webkit-flex!important;
+  display: -ms-flexbox!important;
+  display: flex!important;
+  -webkit-box-align: center!important;
+  -webkit-align-items: center!important;
+  -ms-flex-align: center!important;
+  align-items: center!important;
+}
+
+.justifyContentCenter {
+  -webkit-box-pack: center!important;
+  -webkit-justify-content: center!important;
+  -ms-flex-pack: center!important;
+  justify-content: center!important
+}
+
+
+.wrap {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.site-logo {
+  float: left;
+}
+
+.header {
+  position: relative;
+}
+
+.menubutton {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  right: 18px;
+  font-size: 24px;
+}
+
+@media (max-width: 767px) {
+  .menubutton {
+    display: block;
+  }
+}
+
+.header-navigation {
+  background: rgba(0,0,0,.75);
+  color: white;
+  height: 56px;
+  padding: 0 42px;
+  padding-top: 17px;
+  padding-bottom: 15px;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.header-navigation h1 {
+  font-size: 24px;
+  font-family: NotoSansCJKtc-Black;
+}
+
+.header-navigation a {
+  color: inherit;
+}
+
+.header-navigation>ul {
+  display: flex;
+}
+
+.header-navigation>ul>li {
+  font-family: MicrosoftJhengHeiRegular;
+  font-size: 16px;
+  margin-right: 5px;
+  margin-left: 25px;
+}
+
+.header-navigation>ul>li>a {
+  padding: 5px 10px;
+}
+.header-navigation>ul>li>a:hover {
+  background-color: slategrey;
+}
+
+
+@media (max-width: 767px) {
+  .header-navigation ul {
+    display: block;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+  }
+
+  .header-navigation {
+    height: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .header.menu-show .header-navigation ul {
+    max-height: 500px;
+  }
+
+  .header-navigation ul li:first-child {
+    margin-top: 30px;
+  }
+
+  .header-navigation ul li {
+    height: 30px;
+    font-size: 20px;
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+  .header-navigation>ul>li>a {
+    display: block;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255,255,255,.3);
+  }
+}
+
+.header .banner {
+  height: 420px;
+  background-image: url('/images/header_desktop.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.banner .slogon {
+  color: white;
+  width: 460px;
+  height: 152px;
+  background: rgba(0,0,0,0.35);
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.banner .slogon h2 {
+  font-family: MicrosoftJhengHeiRegular;
+  font-size: 36px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+.banner .slogon h2>em {
+  display: inline-block;
+}
+
+.banner .slogon p {
+  font-family: MicrosoftJhengHeiRegular;
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+@media (max-width: 767px) {
+  .header .banner {
+    background-image: url('/images/header_mobile.png');
+  }
+}
+
+
+.footer {
+  padding: 50px 43px;
+  background-color: #EFE9E7;
+}
+
+.footer .about {
+  max-width: 299px;
+  margin-right: 21px;
+}
+
+.footer .contact {
+  max-width: 299px;
+}
+
+.footer h2 {
+  font-family: MicrosoftJhengHeiRegular;
+  font-size: 24px;
+  margin-bottom: 16px;
+  color: #3D1101;
+}
+
+.footer p {
+  font-family: MicrosoftJhengHeiRegular;
+  font-size: 16px;
+  color: #3D1101;
+  line-height: 20px;
+}
+
+.footer li {
+  font-family: MicrosoftJhengHeiRegular;
+  font-size: 16px;
+  color: #3D1101;
+  list-style-type: disc;
+  list-style-position: inside;
+  line-height: 20px;
+}
+
+.social h1 {
+  text-align: right;
+  font-family: NotoSansCJKtc-Black;
+  font-size: 49px;
+  color: #3D1101;
+  letter-spacing: 0px;
+}
+
+.social>h1 {
+  margin-bottom: 22px;
+  font-weight: bold;
+}
+.social div {
+  text-align: right;
+}
+.social i {
+  font-size: 36px;
+  margin-right: 8px;
+}
+
+@media (max-width: 767px) {
+  .sm-flex {
+    display:-webkit-box!important;
+    display: -webkit-flex!important;
+    display: -ms-flexbox!important;
+    display: flex!important
+  }
+  .sm-flexColumn {
+    -webkit-box-orient: vertical!important;
+    -webkit-box-direction: normal!important;
+    -webkit-flex-direction: column!important;
+    -ms-flex-direction: column!important;
+    flex-direction: column!important
+  }
+
+  .sm-flexTop {
+    display: -webkit-box!important;
+    display: -webkit-flex!important;
+    display: -ms-flexbox!important;
+    display: flex!important;
+    -webkit-box-align: start!important;
+    -webkit-align-items: flex-start!important;
+    -ms-flex-align: start!important;
+    align-items: flex-start!important
+  }
+
+  .footer {
+    padding: 50px 10px;
+    background-color: #EFE9E7;
+  }
+
+  .footer .about {
+    margin-bottom: 30px;
+  }
+  
+  .footer .contact {
+    margin-bottom: 30px;
+  }
+}
