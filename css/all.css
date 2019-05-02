@@ -374,6 +374,58 @@ a {
   }
 }
 
+.chief {
+  font-family: MicrosoftJhengHeiRegular;
+  padding: 0 11px;
+  background: #3D1101;
+  color: #EFE9E7;
+  line-height: 20px;
+}
+.chief .chief-image {
+  margin-right: 25px;
+  height: 460px;
+  flex: 0 1 470px;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-image: url('/images/chef.png');
+}
+
+.chief .chief-info {
+  padding-top: 81px;
+  flex: 0 1 410px;
+  margin-right: 18px;
+}
+
+.chief-info .chief-name {
+  margin-bottom: 16px;
+}
+
+.chief-name h2 {
+  font-size: 20px;
+  line-height: 32px;
+}
+
+@media (max-width: 767px) {
+  .chief {
+    padding: 0;
+  }
+  .chief .chief-image {
+    height: 460px;
+    margin-right: 0;
+    flex: 0 0 auto;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('/images/chef.png');
+  }
+
+  .chief .chief-info {
+    padding: 0;
+    flex: 0 0 auto;
+    margin: 30px;
+  }
+}
+
 .footer {
   padding: 50px 43px;
   background-color: #EFE9E7;
