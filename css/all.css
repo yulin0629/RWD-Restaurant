@@ -426,6 +426,77 @@ a {
   }
 }
 
+.review {
+  background-color: #EFE9E7;
+  padding: 50px 42px;
+  color: #3D1101;
+}
+
+.review>header {
+  text-align: center;
+  margin-bottom: 31px;
+  position: relative;
+}
+
+.review h2 {
+  font-family: MicrosoftJhengHeiRegular;
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+
+.review>ul>li {
+  display: flex;
+  margin-right: 20px;
+}
+
+.review>ul>li>div:last-child {
+  margin-top: 25px;
+}
+
+.review>ul>li img {
+  border-radius: 50%;
+  max-width: 67px;
+  margin-right: 13px;
+}
+
+.review>ul>li h3 {
+  margin-bottom: 22px;
+  font-size: 18px;
+}
+
+.review>ul>li p:nth-of-type(1) {
+  line-height: 24px;
+  margin-bottom: 16px;
+}
+
+.review>ul>li p:nth-of-type(2) {
+  text-align: right;
+  color: rgba(61,17,0,0.75);
+}
+
+@media (max-width: 1023px) {
+  .review {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .review>ul>li {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 767px) {
+
+  .review>ul>li {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .review>ul>li:last-child {
+    margin-bottom: 0;
+  }
+}
+
 .footer {
   padding: 50px 43px;
   background-color: #EFE9E7;
