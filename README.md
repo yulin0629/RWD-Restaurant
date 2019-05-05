@@ -5,4 +5,4 @@
 
 所以這一次我想嘗試全部使用flexbox來實現RWD
 
-過程中對各種flex的特性使用的各純熟了，尤其是flex-grow, flex-shrink, flex-basis 都有更深刻的體會
+過程中對各種flex的特性使用的更純熟了，尤其是flex-grow, flex-shrink, flex-basis 都有更深刻的體會
