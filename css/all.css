@@ -288,7 +288,7 @@ since IE8 won't execute CSS that contains a CSS3 selector.
 
 .header .banner {
   height: 420px;
-  background-image: url('/images/header_desktop.png');
+  background-image: url('../images/header_desktop.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -325,7 +325,7 @@ since IE8 won't execute CSS that contains a CSS3 selector.
 
 @media (max-width: 767px) {
   .header .banner {
-    background-image: url('/images/header_mobile.png');
+    background-image: url('../images/header_mobile.png');
   }
 }
 
@@ -422,7 +422,7 @@ since IE8 won't execute CSS that contains a CSS3 selector.
   flex: 0 1 470px;
   background-position: right;
   background-repeat: no-repeat;
-  background-image: url('/images/chef.png');
+  background-image: url('../images/chef.png');
 }
 
 .chief .chief-info {
@@ -451,7 +451,7 @@ since IE8 won't execute CSS that contains a CSS3 selector.
     background-position: right;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url('/images/chef.png');
+    background-image: url('../images/chef.png');
   }
 
   .chief .chief-info {
