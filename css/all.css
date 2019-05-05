@@ -2,6 +2,42 @@ a {
   text-decoration: none;
 }
 
+#map {
+  height: 386px;
+  /* transform: translate(-50%, -50%); */
+}
+
+.form-stacked input[type="text"],
+.form-stacked input[type="password"],
+.form-stacked input[type="email"],
+.form-stacked input[type="url"],
+.form-stacked input[type="date"],
+.form-stacked input[type="month"],
+.form-stacked input[type="time"],
+.form-stacked input[type="datetime"],
+.form-stacked input[type="datetime-local"],
+.form-stacked input[type="week"],
+.form-stacked input[type="number"],
+.form-stacked input[type="search"],
+.form-stacked input[type="tel"],
+.form-stacked input[type="color"],
+.form-stacked input[type="file"],
+.form-stacked select,
+.form-stacked label,
+.form-stacked textarea {
+    display: block;
+    margin: 0.25em 0;
+}
+
+/*
+Need to separate out the :not() selector from the rest of the CSS 2.1 selectors
+since IE8 won't execute CSS that contains a CSS3 selector.
+*/
+.form-stacked input:not([type]) {
+    display: block;
+    margin: 0.25em 0;
+}
+
 .fab.fa-instagram {
   color: transparent;
   background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
@@ -495,6 +531,21 @@ a {
   .review>ul>li:last-child {
     margin-bottom: 0;
   }
+}
+
+.reservation>div {
+
+}
+
+.reservation form input[type="text"],
+.reservation form input[type="email"],
+.reservation form input[type="tel"],
+.reservation form input[type="number"] {
+  width: 100%;
+}
+
+.reservation form .form-buttons {
+  text-align: right;
 }
 
 .footer {
