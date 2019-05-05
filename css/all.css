@@ -2,11 +2,6 @@ a {
   text-decoration: none;
 }
 
-#map {
-  height: 386px;
-  /* transform: translate(-50%, -50%); */
-}
-
 .form-stacked input[type="text"],
 .form-stacked input[type="password"],
 .form-stacked input[type="email"],
@@ -49,6 +44,10 @@ since IE8 won't execute CSS that contains a CSS3 selector.
 .margin-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.hidden {
+  display: none;
 }
 
 .flex0 {
@@ -461,7 +460,7 @@ since IE8 won't execute CSS that contains a CSS3 selector.
     margin: 30px;
   }
 }
-
+/* review */
 .review {
   background-color: #EFE9E7;
   padding: 50px 42px;
@@ -532,9 +531,48 @@ since IE8 won't execute CSS that contains a CSS3 selector.
     margin-bottom: 0;
   }
 }
+/* reservation */
+.reservation {
+  padding: 50px 11px;
+  background: rgba(250,250,250,0.70);
+  color: #3D1101;
+}
+.reservation>header {
+  text-align: center;
+  margin-bottom: 38px;
+}
 
-.reservation>div {
+.reservation>header>h2 {
+  font-family: MicrosoftJhengHeiRegular;
+  font-size: 24px;
+  margin-bottom: 12px;
+}
 
+.reservation #map {
+  height: 386px;
+  max-width: 460px;
+  width: 100%;
+  margin-right: 20px;
+}
+
+.reservation form {
+  max-width: 460px;
+  width: 100%;
+}
+
+/* consider bootstrap css name conflicts */
+.reservation form .form-group-mine {
+  margin-bottom: 12px;
+}
+
+.reservation label {
+  font-family: PingFangTC-Light;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.reservation form input[type=radio] {
+  margin-right: 36px;
 }
 
 .reservation form input[type="text"],
@@ -542,10 +580,95 @@ since IE8 won't execute CSS that contains a CSS3 selector.
 .reservation form input[type="tel"],
 .reservation form input[type="number"] {
   width: 100%;
+  background: #FFFFFF;
+  border: 1px solid #CCCCCC;
+  box-shadow: inset 0px 1px 0px 0px #ECECEC;
+  border-radius: 3px;
+  font-family: PingFangTC-Light;
+  font-size: 16px;
+  color: #4A4A4A;
+  padding: 5px 14px;
 }
 
 .reservation form .form-buttons {
   text-align: right;
+}
+
+.reservation .radio {
+  margin-right: 36px;
+  font-size: 14px;
+  position: relative;
+  cursor: pointer;
+  line-height: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.radio .label {
+  position: relative;
+  display: block;
+  float: right;
+  margin-left: 6px;
+  width: 16px;
+  height: 16px;
+  border: 1px solid grey;
+  border-radius: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.radio .label:after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  background-color:  #4A90E2;
+  transform: scale(0);
+  transition: all .2s ease;
+  opacity: .08;
+  pointer-events: none;
+}
+
+.radio:hover>.label:after {
+  transform: scale(3.6);
+}
+
+input[type="radio"]:checked + .label {
+  border-color: #4A90E2;
+}
+
+input[type="radio"]:checked + .label::after {
+  transform: scale(1);
+  transition: all .2s cubic-bezier(.35,.9,.4,.9);
+  opacity: 1.0;
+}
+
+.form-buttons button {
+  text-align: center;
+  width: 70px;
+  padding: 5px 0;
+  color: white;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.form-buttons button[type="reset"] {
+  background: rgba(0,0,0,0.35);
+}
+
+.form-buttons button[type="submit"] {
+  background: #F56C23;
+}
+
+@media (max-width: 767px) {
+  .reservation #map {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
 }
 
 .footer {
